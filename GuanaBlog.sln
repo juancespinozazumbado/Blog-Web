@@ -3,9 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuanaBlog.WebApp", "GuanaBlog.WebApp\GuanaBlog.WebApp.csproj", "{FE3E1F9C-E807-4767-AAB5-EE80D384909F}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5F74D932-2E9B-41F9-86D1-0A46910A9942}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuanaBlog.Core", "GuanaBlog.Core\GuanaBlog.Core.csproj", "{15D5D3BA-BB44-4306-AB47-6F36A3816766}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuanaBlog.Core", "src\GuanaBlog.Core\GuanaBlog.Core.csproj", "{49F0E5BE-5745-47EA-B657-E7181D4E594A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GuanaBlog.WebApp", "src\GuanaBlog.WebApp\GuanaBlog.WebApp.csproj", "{C4770020-0DD9-4C8C-A226-40A9FB262F1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuanaBlog.API", "GuanaBlog.API\GuanaBlog.API.csproj", "{5FBACEFC-8719-4A6D-8764-EAF16B6F927F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{0EE67FDC-2354-4C3F-B340-06557D47CB75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GuanaBlog.CoreTest", "GuanaBlog.CoreTest\GuanaBlog.CoreTest.csproj", "{152B1A0B-B555-4F37-B597-1FF7C77FDD36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,17 +21,31 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FE3E1F9C-E807-4767-AAB5-EE80D384909F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE3E1F9C-E807-4767-AAB5-EE80D384909F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE3E1F9C-E807-4767-AAB5-EE80D384909F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE3E1F9C-E807-4767-AAB5-EE80D384909F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{15D5D3BA-BB44-4306-AB47-6F36A3816766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{15D5D3BA-BB44-4306-AB47-6F36A3816766}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{15D5D3BA-BB44-4306-AB47-6F36A3816766}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{15D5D3BA-BB44-4306-AB47-6F36A3816766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49F0E5BE-5745-47EA-B657-E7181D4E594A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49F0E5BE-5745-47EA-B657-E7181D4E594A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49F0E5BE-5745-47EA-B657-E7181D4E594A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49F0E5BE-5745-47EA-B657-E7181D4E594A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4770020-0DD9-4C8C-A226-40A9FB262F1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4770020-0DD9-4C8C-A226-40A9FB262F1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4770020-0DD9-4C8C-A226-40A9FB262F1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4770020-0DD9-4C8C-A226-40A9FB262F1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FBACEFC-8719-4A6D-8764-EAF16B6F927F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FBACEFC-8719-4A6D-8764-EAF16B6F927F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FBACEFC-8719-4A6D-8764-EAF16B6F927F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FBACEFC-8719-4A6D-8764-EAF16B6F927F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{152B1A0B-B555-4F37-B597-1FF7C77FDD36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{152B1A0B-B555-4F37-B597-1FF7C77FDD36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{152B1A0B-B555-4F37-B597-1FF7C77FDD36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{152B1A0B-B555-4F37-B597-1FF7C77FDD36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{49F0E5BE-5745-47EA-B657-E7181D4E594A} = {5F74D932-2E9B-41F9-86D1-0A46910A9942}
+		{C4770020-0DD9-4C8C-A226-40A9FB262F1D} = {5F74D932-2E9B-41F9-86D1-0A46910A9942}
+		{5FBACEFC-8719-4A6D-8764-EAF16B6F927F} = {5F74D932-2E9B-41F9-86D1-0A46910A9942}
+		{152B1A0B-B555-4F37-B597-1FF7C77FDD36} = {0EE67FDC-2354-4C3F-B340-06557D47CB75}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F9EDEA4F-E93E-4BFA-93E0-0F099ECCF723}
