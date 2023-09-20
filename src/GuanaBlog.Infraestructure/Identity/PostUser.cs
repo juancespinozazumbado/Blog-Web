@@ -5,5 +5,6 @@ namespace GuanaBlog.Infraestructure.Identity
     public class PostUser : IdentityUser
     {
 
+
     }
 }
