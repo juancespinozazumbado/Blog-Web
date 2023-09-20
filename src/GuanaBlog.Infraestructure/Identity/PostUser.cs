@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace GuanaBlog.Core.Domain.Entitis
+namespace GuanaBlog.Infraestructure.Identity
 {
     public class PostUser : IdentityUser
     {
-        public string  UserName {  get; set; }  
+
     }
 }
