@@ -14,8 +14,7 @@ namespace GuanaBlog.Core.Domain.Entitis
 
         public IList<RateVote> RatesVotes { get; set; }
 
-        public Guid UserId { get; set; }
-        public PostUser User { get; set; }  
+        public string UserId { get; set; }
         public double Rate;
 
     }
